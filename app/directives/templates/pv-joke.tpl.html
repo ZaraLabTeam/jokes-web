@@ -1,0 +1,16 @@
+<a class="row" ui-sref="joke.single(joke)">
+    <blockquote ng-bind-html="getJokeContent()"></blockquote>
+</a>
+
+<section class="row">
+
+    <div class="col-md-6 text-left">
+        <a href="#"> От <cite title="getJokeAuthor()">{{ getJokeAuthor() }}</cite></a>
+    </div>
+
+    <div class="col-md-6 text-right">
+        <h3><a href="#" class="label label-default">{{ joke.category }}</a></h3>
+        <time>{{ getJokeTimeAgo() }}</time>
+    </div>
+
+</section>

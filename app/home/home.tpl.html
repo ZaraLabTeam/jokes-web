@@ -1,0 +1,18 @@
+<section class="row">
+    <h1 class="text-center">Вицове</h1>
+
+    <article class="col-md-4 text-justify" ng-repeat="joke in vm.jokes"
+             pv-joke joke="joke">
+    </article>
+
+</section>
+
+<section class="row">
+    <h1 class="text-center">Категории</h1>
+
+    <a ng-repeat="category in vm.categories" class="col-sm-2"
+        ui-sref="category(category)">
+        {{category.name}}
+    </a>
+
+</section>
